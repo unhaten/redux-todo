@@ -1,10 +1,10 @@
 import {todoAPI} from "../../services/todo.service.ts";
 
 const Query = () => {
-    const {data, error, isLoading} = todoAPI.useFetchTodosQuery
+    const {data, error, isLoading} = todoAPI.useFetchTodosQuery()
     return (
         <>
-            test
+            length: {data && data.length}
         </>
     )
 }
